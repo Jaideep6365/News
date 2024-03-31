@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #313d5aff;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #343f3eff;
+    line-height: 1.4erm;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: #fcfeff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.company-logo img{
+    width: 100px;
+    height: 100px;
+}
+.nav-links ul{
+    gap: 16px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color:  #cbc5eaff;
+}
+.hover-link:active{
+    color: red;
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding-inline:12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.search-button{
+    background-color: #51d6ffff;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.search-button:hover{
+    background-color: #8d9ec6ff;
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 150px;
+}
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+
+.news-source{
+    margin-block:12px ;
+}
+
+.active{
+    color: #94b0daff;
+}
